@@ -293,6 +293,7 @@ public class GameView extends SurfaceView implements Runnable{
                 // если пользователь нажал на левую сторону экрана
                 if (event.getX() < (screenX / 2)) {
                     // то движение самолёта вверх
+                    flight.setY(screenY / 2);
                     flight.setGoingUp(true);
                 }
 
